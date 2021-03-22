@@ -1,6 +1,11 @@
 {
   "name": "iwm-helpdesk",
+  "productName": "IWM Helpdesk",
   "version": "0.1.0",
+  "author": {
+    "email": "talha@devzone.services",
+    "name": "Muhammad Talha"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
