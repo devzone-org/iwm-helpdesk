@@ -4,8 +4,8 @@
       <h3 class="text-lg leading-6 font-medium text-gray-900">IWM Helpdesk</h3>
     </div>
 
-    <div class="shadow sm:rounded-md sm:overflow-hidden">
-      <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
+    <div class="shadow rounded-md overflow-hidden">
+      <div class="bg-white py-6 px-4 space-y-6">
         <div class="grid grid-cols-6 gap-6">
           <div class="col-span-6">
             <label for="domain" class="block text-sm font-medium text-gray-700"

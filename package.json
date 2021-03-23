@@ -2,7 +2,7 @@
   "name": "iwm-helpdesk",
   "productName": "IWM Helpdesk",
   "compression": "normal",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "email": "talha@devzone.services",
     "name": "Muhammad Talha"
@@ -19,22 +19,25 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.4",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "electron": "^11.0.0",
     "electron-devtools-installer": "^3.1.0",
+    "electron-icon-builder": "^2.0.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "postcss": "^8.2.8",
-    "tailwindcss": "^2.0.4",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
     "vue-cli-plugin-electron-builder": "~2.0.0-rc.6",
     "vue-template-compiler": "^2.6.11"
   },
