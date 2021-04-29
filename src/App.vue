@@ -513,7 +513,7 @@ export default {
       });
       var config = {
         method: "post",
-        url: "http://92.168.1.40/helpdesk/employee/update/app",
+        url: "http://interwood.test/helpdesk/employee/update/app",
         data: data,
       };
       let that = this;
@@ -548,7 +548,8 @@ export default {
     searchEmployee: function () {
       var config = {
         method: "get",
-        url: "http://92.168.1.40/helpdesk/search/employee/" + this.employee_id,
+        url:
+          "http://interwood.test/helpdesk/search/employee/" + this.employee_id,
       };
       let that = this;
       this.disabled = true;
@@ -566,13 +567,13 @@ export default {
             that.employee_info = response.data.response;
           } else {
             that.error = "No record found";
-            // that.errors = response.data.errors;
+            //that.errors = response.data.errors;
             that.disabled = false;
           }
         })
         .catch(function (error) {
           console.log(error);
-          that.error = "Something went wrong.";
+          that.error = "Something went wrong." + error;
           that.disabled = false;
         });
     },
@@ -582,7 +583,7 @@ export default {
       });
       var config = {
         method: "post",
-        url: "http://92.168.1.40/helpdesk/employee/load/default",
+        url: "http://interwood.test/helpdesk/employee/load/default",
         data: data,
       };
       let that = this;
@@ -605,7 +606,7 @@ export default {
         .catch(function (error) {
           console.log(error);
           that.create_ticket = false;
-          that.error = "Something went wrong.";
+          that.error = "Something went wrong." + error;
           that.disabled = false;
         });
     },
@@ -634,7 +635,7 @@ export default {
       });
       var config = {
         method: "post",
-        url: "http://92.168.1.40/helpdesk/create",
+        url: "http://interwood.test/helpdesk/create",
         data: data,
       };
       let that = this;
