@@ -501,7 +501,7 @@ export default {
       });
       var config = {
         method: "post",
-        url: "http://interwood.test/helpdesk/employee/update/app",
+        url: "http://192.168.1.40/helpdesk/employee/update/app",
         data: data,
       };
       let that = this;
@@ -536,7 +536,7 @@ export default {
     searchEmployee: function () {
       var config = {
         method: "get",
-        url: "http://interwood.test/helpdesk/search/employee/" + this.employee_id,
+        url: "http://192.168.1.40/helpdesk/search/employee/" + this.employee_id,
       };
       let that = this;
       this.disabled = true;
@@ -570,7 +570,7 @@ export default {
       });
       var config = {
         method: "post",
-        url: "http://interwood.test/helpdesk/employee/load/default",
+        url: "http://192.168.1.40/helpdesk/employee/load/default",
         data: data,
       };
       let that = this;
@@ -622,7 +622,7 @@ export default {
       });
       var config = {
         method: "post",
-        url: "http://interwood.test/helpdesk/create",
+        url: "http://192.168.1.40/helpdesk/create",
         data: data,
       };
       let that = this;
@@ -660,7 +660,7 @@ export default {
       });
       var config = {
         method: "post",
-        url: "http://interwood.test/helpdesk/employee/remove/app",
+        url: "http://192.168.1.40/helpdesk/employee/remove/app",
         data: data,
       };
       let that = this;
