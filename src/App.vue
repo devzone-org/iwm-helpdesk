@@ -654,7 +654,41 @@ export default {
           });
     },
     removeInfo:function (){
-      console.log('as');
+      var data = JSON.stringify({
+        username: this.userinfo.username,
+        employee_id: this.employee_info["id"],
+      });
+      var config = {
+        method: "post",
+        url: "http://interwood.test/helpdesk/employee/remove/app",
+        data: data,
+      };
+      let that = this;
+
+      that.success = "";
+      that.errors = [];
+      that.error = "";
+      that.create_ticket = true;
+      axios(config)
+          .then(function (response) {
+            // var obj = response.data;
+            if (response.data.status == 1) {
+              that.employee_info=[];
+              that.employee_id="";
+              that.success = "Employee has been unlinked from helpdesk.";
+              that.disabled = false;
+              that.create_ticket = false;
+            } else {
+              that.errors = [];
+              that.errors = response.data.errors;
+              that.disabled = false;
+            }
+          })
+          .catch(function (error) {
+            console.log(error);
+            that.error = "Something went wrong." + error;
+            that.disabled = false;
+          });
     },
   },
   mounted() {
