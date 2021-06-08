@@ -2,10 +2,10 @@
   "name": "iwm-helpdesk",
   "productName": "IWM Helpdesk",
   "compression": "normal",
-  "version": "1.0.3",
+  "version": "1.1.1",
   "author": {
     "email": "talha@devzone.services",
-    "name": "Muhammad Talha"
+    "name": "devzone"
   },
   "repository": {
     "type": "git",
